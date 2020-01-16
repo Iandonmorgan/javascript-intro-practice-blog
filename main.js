@@ -3,3 +3,13 @@ class of article_header and change its text with the textContent property
 to "Welcome to the {insert your name here} blog" */
 
 document.querySelector(".article__header").textContent = "Welcome to the Landon Morgan blog";
+
+/*
+Use JavaScript to obtain a reference to all article__header elements
+and change their classList property value to article__header important.
+ */
+
+const articleHeaderImportant = document.querySelectorAll(".article__header");
+for (let i = 0; i < articleHeaderImportant.length; i++) {
+        articleHeaderImportant[i].classList.add("important");
+}
