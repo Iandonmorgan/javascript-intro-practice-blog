@@ -13,3 +13,8 @@ const articleHeaderImportant = document.querySelectorAll(".article__header");
 for (let i = 0; i < articleHeaderImportant.length; i++) {
         articleHeaderImportant[i].classList.add("important");
 }
+
+// Obtain a reference the element with a class of dashed and remove it.
+
+const removeDashed = document.querySelector(".dashed");
+removeDashed.classList.remove("dashed");
